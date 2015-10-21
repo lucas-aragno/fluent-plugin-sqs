@@ -1,6 +1,7 @@
 module Fluent
 
     require 'aws-sdk'
+    require 'aws-sdk-resources'
 
     SQS_BATCH_SEND_MAX_MSGS = 10
     SQS_BATCH_SEND_MAX_SIZE = 262144

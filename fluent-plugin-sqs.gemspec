@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.version = "1.6.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Yuri Odagiri"]
+  s.authors = ["Yuri Odagiri, Lucas Aragno"]
   s.date = "2015-07-03"
-  s.email = "ixixizko@gmail.com"
+  s.email = "lucas.aragno157@gmail.com"
   s.license = "Apache-2.0"
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -33,15 +33,18 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<fluentd>, ["~> 0.12.0"])
       s.add_runtime_dependency(%q<aws-sdk>, ["~> 1.9.5"])
+      s.add_runtime_dependency(%q<aws-sdk-resources>, ["~> 2"])
       s.add_runtime_dependency(%q<yajl-ruby>, ["~> 1.0"])
     else
       s.add_dependency(%q<fluentd>, ["~> 0.12.0"])
       s.add_dependency(%q<aws-sdk>, ["~> 1.9.5"])
+      s.add_dependency(%q<aws-sdk-resources>, ["~> 2"])
       s.add_dependency(%q<yajl-ruby>, ["~> 1.0"])
     end
   else
     s.add_dependency(%q<fluentd>, ["~> 0.12.0"])
     s.add_dependency(%q<aws-sdk>, ["~> 1.9.5"])
+    s.add_dependency(%q<aws-sdk-resources>, ["~> 2"])
     s.add_dependency(%q<yajl-ruby>, ["~> 1.0"])
   end
   s.add_development_dependency "bundler"
